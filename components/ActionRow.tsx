@@ -12,9 +12,9 @@ type Props = {
 
 const ActionRow = ({ title, screens, color, requiresPro, icon, vertical }: Props) => {
     return (
-        <TouchableOpacity>
-            <Ionicons name='person-circle' size={24} color="black" />
-            <Text>ActionRow</Text>
+        <TouchableOpacity className='' style={{ backgroundColor: color }}>
+            <Ionicons name={icon} size={30} color="white" />
+            <Text>{title}</Text>
         </TouchableOpacity>
     )
 }
