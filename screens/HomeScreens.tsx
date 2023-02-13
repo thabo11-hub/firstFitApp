@@ -18,12 +18,52 @@ const HomeScreens = () => {
           className="w-full h-64"
         />
 
-        <ActionRow 
+        <ActionRow
           title="Track Workout"
           screens="Demo"
           color="#E59620"
           icon="fitness"
           vertical
+        />
+
+        <ActionRow
+          title="Browse Workout"
+          screens="Demo"
+          color="#1982C4"
+          icon="fitness"
+          vertical
+        />
+
+        <ActionRow
+          title="Connect with Friends"
+          screens="Demo"
+          color="#F44174"
+          icon="share-social"
+
+        />
+
+        <ActionRow
+          title="Add workout"
+          screens="Demo"
+          color="#8AC926"
+          icon="add-circle"
+          vertical
+        />
+
+        <ActionRow
+          title="Create Routine"
+          screens="Demo"
+          color="#C03221"
+          icon="md-time"
+          
+        />
+
+        <ActionRow
+          title="Join Challenges"
+          screens="Demo"
+          color="#2396F7"
+          icon="trophy"
+          requiresPro
         />
 
       </ScrollView>
