@@ -4,17 +4,20 @@ import React from 'react'
 
 const HomeScreens = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView className='flex-1 bg-gray-400 relative'>
+      <ScrollView>
 
-      <TouchableOpacity>
-        <Ionicons name='person-circle' size={24} color="black"/>
-        <Text>Home</Text>
-      </TouchableOpacity>
 
-      <Image
-        source={{ uri: 'https://www.freenamedesigns.com/boy-names/calligraphic-stylish-name-tattoo-designs/eldridge-name-design.jpg' }}
-        className="w-full h-64"
-      />
+        <TouchableOpacity className='absolute z-50 top-5 right-10 items-center'>
+          <Ionicons name='person-circle' size={24} color="black" />
+          <Text>Home</Text>
+        </TouchableOpacity>
+
+        <Image
+          source={{ uri: 'https://www.freenamedesigns.com/boy-names/calligraphic-stylish-name-tattoo-designs/eldridge-name-design.jpg' }}
+          className="w-full h-64"
+        />
+      </ScrollView>
     </SafeAreaView>
   )
 }
