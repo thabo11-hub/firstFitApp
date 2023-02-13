@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView, Image, TouchableOpacity } from 'react-native'
+import { Text, SafeAreaView, Image, TouchableOpacity, ScrollView } from 'react-native'
 import { Ionicons } from '@expo/vector-icons'
 import React from 'react'
 
@@ -7,10 +7,9 @@ const HomeScreens = () => {
     <SafeAreaView className='flex-1 bg-gray-400 relative'>
       <ScrollView>
 
-
         <TouchableOpacity className='absolute z-50 top-5 right-10 items-center'>
           <Ionicons name='person-circle' size={24} color="black" />
-          <Text>Home</Text>
+          <Text className='text-center text-[#E59620]'>Home</Text>
         </TouchableOpacity>
 
         <Image
@@ -19,7 +18,7 @@ const HomeScreens = () => {
         />
       </ScrollView>
     </SafeAreaView>
-  )
-}
+  );
+};
 
 export default HomeScreens
