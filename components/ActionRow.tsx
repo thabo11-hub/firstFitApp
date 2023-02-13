@@ -1,12 +1,22 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text, TouchableOpacity } from 'react-native'
+import { Ionicons } from '@expo/vector-icons'
 
-const ActionRow = () => {
-  return (
-    <View>
-      <Text>ActionRow</Text>
-    </View>
-  )
+type Props = {
+    title: string;
+    screens: any;
+    color: string;
+    requiresPro?: boolean;
+    icon?: any;
+    vertical?: boolean;
+}
+
+const ActionRow = ({ title, screens, color, requiresPro, icon, vertical }: Props) => {
+    return (
+        <TouchableOpacity>
+            <Ionicons name='person-circle' size={24} color="black" />
+            <Text>ActionRow</Text>
+        </TouchableOpacity>
+    )
 }
 
 export default ActionRow

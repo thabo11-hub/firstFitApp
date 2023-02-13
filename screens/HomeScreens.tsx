@@ -1,6 +1,7 @@
 import { Text, SafeAreaView, Image, TouchableOpacity, ScrollView } from 'react-native'
 import { Ionicons } from '@expo/vector-icons'
 import React from 'react'
+import ActionRow from '../components/ActionRow';
 
 const HomeScreens = () => {
   return (
@@ -16,6 +17,15 @@ const HomeScreens = () => {
           source={{ uri: 'https://www.freenamedesigns.com/boy-names/calligraphic-stylish-name-tattoo-designs/eldridge-name-design.jpg' }}
           className="w-full h-64"
         />
+
+        <ActionRow 
+          title="Track Workout"
+          screens="Demo"
+          color="#E59620"
+          icon="fitness"
+          vertical
+        />
+
       </ScrollView>
     </SafeAreaView>
   );
