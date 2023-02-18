@@ -1,6 +1,6 @@
-import { Text, SafeAreaView, Image, TouchableOpacity, ScrollView } from 'react-native'
-import { Ionicons } from '@expo/vector-icons'
-import React from 'react'
+import { Text, SafeAreaView, Image, TouchableOpacity, ScrollView } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
+import React from 'react';
 import ActionRow from '../components/ActionRow';
 
 const HomeScreens = () => {
@@ -71,4 +71,4 @@ const HomeScreens = () => {
   );
 };
 
-export default HomeScreens
+export default HomeScreens;
