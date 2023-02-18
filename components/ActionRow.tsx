@@ -1,6 +1,10 @@
 import { View, Text, TouchableOpacity } from 'react-native'
 import { Ionicons } from '@expo/vector-icons'
 import { useNavigation } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { RootStackParamList } from '../App';
+
+export type NavigationProp = NativeStackNavigationProp<RootStackParamList,"Home">;
 
 type Props = {
     title: string;
