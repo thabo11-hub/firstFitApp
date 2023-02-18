@@ -1,4 +1,4 @@
-import { Text, SafeAreaView, Image, TouchableOpacity, ScrollView } from 'react-native';
+import { Text, SafeAreaView, Image, TouchableOpacity, ScrollView, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import React from 'react';
 import ActionRow from '../components/ActionRow';
@@ -17,55 +17,58 @@ const HomeScreens = () => {
           source={{ uri: 'https://i.ingur.com/e14NE49.png' }}
           className="w-full h-64"
         />
+        <View className='mx-5'>
 
-        <ActionRow
-          title="Track Workout"
-          screens="Demo"
-          color="#E59620"
-          icon="fitness"
-          vertical
-        />
+          <View className='flex-row justify-between space-x-2'>
+            <ActionRow
+              title="Track Workout"
+              screens="Demo"
+              color="#E59620"
+              icon="fitness"
+              vertical
+            />
 
-        <ActionRow
-          title="Browse Workout"
-          screens="Demo"
-          color="#1982C4"
-          icon="fitness"
-          vertical
-        />
+            <ActionRow
+              title="Browse Workout"
+              screens="Demo"
+              color="#1982C4"
+              icon="fitness"
+              vertical
+            />
+          </View>
 
-        <ActionRow
-          title="Connect with Friends"
-          screens="Demo"
-          color="#F44174"
-          icon="share-social"
+          <ActionRow
+            title="Connect with Friends"
+            screens="Demo"
+            color="#F44174"
+            icon="share-social"
 
-        />
+          />
 
-        <ActionRow
-          title="Add workout"
-          screens="Demo"
-          color="#8AC926"
-          icon="add-circle"
-          vertical
-        />
+          <ActionRow
+            title="Add workout"
+            screens="Demo"
+            color="#8AC926"
+            icon="add-circle"
+            vertical
+          />
 
-        <ActionRow
-          title="Create Routine"
-          screens="Demo"
-          color="#C03221"
-          icon="md-time"
-          
-        />
+          <ActionRow
+            title="Create Routine"
+            screens="Demo"
+            color="#C03221"
+            icon="md-time"
 
-        <ActionRow
-          title="Join Challenges"
-          screens="Demo"
-          color="#2396F7"
-          icon="trophy"
-          requiresPro
-        />
+          />
 
+          <ActionRow
+            title="Join Challenges"
+            screens="Demo"
+            color="#2396F7"
+            icon="trophy"
+            requiresPro
+          />
+        </View>
       </ScrollView>
     </SafeAreaView>
   );
