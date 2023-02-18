@@ -14,7 +14,7 @@ const HomeScreens = () => {
         </TouchableOpacity>
 
         <Image
-          source={{ uri: 'https://www.freenamedesigns.com/boy-names/calligraphic-stylish-name-tattoo-designs/eldridge-name-design.jpg' }}
+          source={{ uri: 'https://i.ingur.com/e14NE49.png' }}
           className="w-full h-64"
         />
 
