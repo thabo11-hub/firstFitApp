@@ -16,7 +16,7 @@ type Props = {
 }
 
 const ActionRow = ({ title, screens, color, requiresPro, icon, vertical }: Props) => {
-    const navigation = useNavigation();
+    const navigation = useNavigation<NavigationProp>();
 
     return (
         <TouchableOpacity className={`flex m-2 flex-1 flex-row justify-center items-center py-6 rounded-lg space-x-2 
