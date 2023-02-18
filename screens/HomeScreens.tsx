@@ -22,7 +22,7 @@ const HomeScreens = () => {
           <View className='flex-row justify-between space-x-2'>
             <ActionRow
               title="Track Workout"
-              screens="Demo"
+              screen="Demo"
               color="#E59620"
               icon="fitness"
               vertical
@@ -30,7 +30,7 @@ const HomeScreens = () => {
 
             <ActionRow
               title="Browse Workout"
-              screens="Demo"
+              screen="Demo"
               color="#1982C4"
               icon="fitness"
               vertical
@@ -39,7 +39,7 @@ const HomeScreens = () => {
 
           <ActionRow
             title="Connect with Friends"
-            screens="Demo"
+            screen="Demo"
             color="#F44174"
             icon="share-social"
 
@@ -47,7 +47,7 @@ const HomeScreens = () => {
 
           <ActionRow
             title="Add workout"
-            screens="Demo"
+            screen="Demo"
             color="#8AC926"
             icon="add-circle"
             vertical
@@ -55,7 +55,7 @@ const HomeScreens = () => {
 
           <ActionRow
             title="Create Routine"
-            screens="Demo"
+            screen="Demo"
             color="#C03221"
             icon="md-time"
 
@@ -63,7 +63,7 @@ const HomeScreens = () => {
 
           <ActionRow
             title="Join Challenges"
-            screens="Demo"
+            screen="Demo"
             color="#2396F7"
             icon="trophy"
             requiresPro

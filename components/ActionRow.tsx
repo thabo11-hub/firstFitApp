@@ -8,18 +8,19 @@ export type NavigationProp = NativeStackNavigationProp<RootStackParamList,"Home"
 
 type Props = {
     title: string;
-    screens: any;
+    screen: any;
     color: string;
     requiresPro?: boolean;
     icon?: any;
     vertical?: boolean;
 }
 
-const ActionRow = ({ title, screens, color, requiresPro, icon, vertical }: Props) => {
+const ActionRow = ({ title, screen, color, requiresPro, icon, vertical }: Props) => {
     const navigation = useNavigation<NavigationProp>();
 
     return (
-        <TouchableOpacity className={`flex m-2 flex-1 flex-row justify-center items-center py-6 rounded-lg space-x-2 
+        <TouchableOpacity onPress={() => navigation.navigate(screen)}
+         className={`flex m-2 flex-1 flex-row justify-center items-center py-6 rounded-lg space-x-2 
         ${vertical ? "flex-col" : "flex-row"}`}
             style={{ backgroundColor: color }}>
             <Ionicons name={icon} size={30} color="white" />
