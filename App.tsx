@@ -5,7 +5,13 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreens from './screens/HomeScreens';
 import DemoScreens from './screens/DemoScreens';
 
-const Stack = createNativeStackNavigator();
+export type RootStackParamList ={
+  Home: undefined;
+  Paywall: undefined;
+  Demo: undefined;
+}
+
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export default function App() {
   return (
@@ -15,9 +21,7 @@ export default function App() {
           headerShown: false
         }} name='Home' component={HomeScreens} />
 
-        <Stack.Screen options={{
-          headerShown: false
-        }} name='Demo' component={DemoScreens} />
+        <Stack.Screen name='Demo' component={DemoScreens} />
 
       </Stack.Navigator>
     </NavigationContainer>
