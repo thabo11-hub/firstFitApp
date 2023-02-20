@@ -3,7 +3,7 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import { View, Text, SafeAreaView } from 'react-native'
 import { RootStackParamList } from '../App'
 
-export type NavigationProp = NativeStackNavigationProp<RootStackParamList>
+export type NavigationProp = NativeStackNavigationProp<RootStackParamList, "Demo">;
 
 const DemoScreens = () => {
   const navigation = useNavigation<NavigationProp>();
