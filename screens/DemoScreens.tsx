@@ -1,10 +1,17 @@
-import { View, Text } from 'react-native'
+import { useNavigation } from '@react-navigation/native'
+import { NativeStackNavigationProp } from '@react-navigation/native-stack'
+import { View, Text, SafeAreaView } from 'react-native'
+import { RootStackParamList } from '../App'
+
+export type NavigationProp = NativeStackNavigationProp<RootStackParamList>
 
 const DemoScreens = () => {
+  const navigation = useNavigation<NavigationProp>();
+
   return (
-    <View>
+    <SafeAreaView>
       <Text>DemoScreens</Text>
-    </View>
+    </SafeAreaView>
   )
 }
 

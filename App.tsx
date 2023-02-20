@@ -21,7 +21,7 @@ export default function App() {
           headerShown: false
         }} name='Home' component={HomeScreens} />
 
-        <Stack.Screen name='Demo' component={DemoScreens} />
+        <Stack.Screen options={{ headerShown : false }} name='Demo' component={DemoScreens} />
 
       </Stack.Navigator>
     </NavigationContainer>

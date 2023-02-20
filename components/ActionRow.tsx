@@ -4,7 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../App';
 
-export type NavigationProp = NativeStackNavigationProp<RootStackParamList,"Home">;
+export type NavigationProp = NativeStackNavigationProp<RootStackParamList, "Home">;
 
 type Props = {
     title: string;
@@ -20,7 +20,7 @@ const ActionRow = ({ title, screen, color, requiresPro, icon, vertical }: Props)
 
     return (
         <TouchableOpacity onPress={() => navigation.navigate(screen)}
-         className={`flex m-2 flex-1 flex-row justify-center items-center py-6 rounded-lg space-x-2 
+            className={`flex m-2 flex-1 flex-row justify-center items-center py-6 rounded-lg space-x-2 
         ${vertical ? "flex-col" : "flex-row"}`}
             style={{ backgroundColor: color }}>
             <Ionicons name={icon} size={30} color="white" />
