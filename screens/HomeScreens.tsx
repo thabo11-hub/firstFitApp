@@ -2,13 +2,22 @@ import { Text, SafeAreaView, Image, TouchableOpacity, ScrollView, View } from 'r
 import { Ionicons } from '@expo/vector-icons';
 import React from 'react';
 import ActionRow from '../components/ActionRow';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { RootStackParamList } from '../App';
+import { useNavigation } from '@react-navigation/native';
+
+export type NavigationProp = NativeStackNavigationProp<RootStackParamList, "Home">;
 
 const HomeScreens = () => {
+ const navigation = useNavigation<NavigationProp>();
+
   return (
     <SafeAreaView className='flex-1 bg-gray-400 relative'>
       <ScrollView>
 
-        <TouchableOpacity className='absolute z-50 top-5 right-10 items-center'>
+        <TouchableOpacity 
+        onPress={() => navigation.navigate("Paywall")}
+        className='absolute z-50 top-5 right-10 items-center'>
           <Ionicons name='person-circle' size={24} color="black" />
           <Text className='text-center text-[#E59620]'>Home</Text>
         </TouchableOpacity>
