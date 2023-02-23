@@ -1,4 +1,4 @@
-# firstFitApp
+# firstFitnessApp
 React native
 
 yarn add nativewind
